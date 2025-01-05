@@ -1,10 +1,10 @@
 //fs is the inbuit module 
 const fs = require("fs");
 
-// async 
+// async (non-blocking)
 //fs.writeFileSync("./text.txt"," Hey There , Welcome!!! ");
 
-//sync
+//sync (blocking)
 //fs.writeFile("./text1.txt","Hey There!!" ,(err)=>{});
 
 // read async
@@ -26,5 +26,9 @@ fs.readFile("./text.txt","utf-8",(err,res)=>{
     
 
 // append 
-fs.appendFileSync("./text.txt",' How was your day ??\n');
+//fs.appendFileSync("./text.txt",' How was your day ??\n');
+
+//fs.cpSync("./contact.txt","./copy.txt");
+
+//console.log(fs.statSync("./contact.txt"));
 
